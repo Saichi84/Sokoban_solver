@@ -23,7 +23,7 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     map = load_map(args.map)
-
+    
     game_state = GameState(map)
     strategy = args.strategy
     solver = Solver(game_state, strategy)
